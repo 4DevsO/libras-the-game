@@ -1,0 +1,43 @@
+.logo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 50px;
+  }
+
+  .jogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-spacer {
+    width: 100px;
+  }
+
+  @media screen and (max-width: $break-medium) {
+    flex-direction: column;
+
+    .logo-spacer {
+      visibility: hidden;
+    }
+  }
+}
+
+.spinning-logo {
+  animation: spin infinite 20s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
