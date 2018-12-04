@@ -1,3 +1,5 @@
+$logo-size: 50px;
+
 .logo {
   margin-top: 20px;
   display: flex;
@@ -5,31 +7,18 @@
   justify-content: center;
   align-items: center;
 
-  img {
-    max-width: 50px;
-  }
-
   .jogo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
-  .logo-spacer {
-    width: 100px;
-  }
-
-  @media screen and (max-width: $break-medium) {
-    flex-direction: column;
-
-    .logo-spacer {
-      visibility: hidden;
-    }
-  }
+  // @media screen and (max-width: $break-medium) {
+  //   flex-direction: column;
+  // }
 }
 
 .spinning-logo {
+  max-width: $logo-size;
   animation: spin infinite 20s linear;
 }
 
