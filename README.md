@@ -7,3 +7,7 @@
   <br />
   <strong>Jogo feito para ajudar na aprendizagem de novos sinais de Libras.</strong>
 </p>
+
+# Deploying
+
+https://elements.heroku.com/buildpacks/mars/create-react-app-buildpack
