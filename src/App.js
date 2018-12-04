@@ -28,7 +28,7 @@ class App extends Component {
           center
           style={{ position: "fixed", bottom: 0, right: 0, left: 0 }}
         >
-          Equipe CdC
+          3Devs1Eletrician
         </Container>
       </React.Fragment>
     );
