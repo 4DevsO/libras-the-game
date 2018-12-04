@@ -95,4 +95,7 @@
   &.is-large {
     @include setup(4px);
   }
+  &.is-extra-large {
+    @include setup(6px);
+  }
 }
