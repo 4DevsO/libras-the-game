@@ -11,3 +11,7 @@
 # Deploying
 
 https://elements.heroku.com/buildpacks/mars/create-react-app-buildpack
+
+# Links
+
+[Posições de Mão, Escrita SEL](http://sel-libras.blogspot.com/p/blog-page_13.html)
