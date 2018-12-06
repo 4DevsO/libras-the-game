@@ -2,10 +2,10 @@ const alphaMode = true;
 
 const BASE_URL = 'http://libras-o-jogo.herokuapp.com';
 
-export const endPoints = { root: '/', game: '/game' };
+const endPoints = { root: '/', game: '/game' };
 
 const getEndpoint = (endpoint) => {
-  const endPExists = Object.keys(endPoints).some((ep) => ep == endpoint);
+  const endPExists = Object.keys(endPoints).some((ep) => ep === endpoint);
 
   if (endPExists) {
     if (alphaMode) {

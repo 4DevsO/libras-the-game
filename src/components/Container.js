@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Container({
   title,
@@ -9,21 +9,21 @@ export default function Container({
   style,
   children
 }) {
-  const hasTitle = title ? "with-title" : "";
-  const isCentered = center ? "is-center" : "";
-  const isDark = dark ? "is-dark" : "";
-  const isRounded = rounded ? "is-rounded" : "";
+  const hasTitle = title ? 'with-title' : '';
+  const isCentered = center ? 'is-center' : '';
+  const isDark = dark ? 'is-dark' : '';
+  const isRounded = rounded ? 'is-rounded' : '';
 
   let daStyle = { ...style };
 
   if (center) {
     daStyle = {
       ...daStyle,
-      textAlign: "center",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: "column"
+      textAlign: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column'
     };
   }
 
@@ -43,5 +43,5 @@ Container.propTypes = {
   center: PropTypes.bool,
   dark: PropTypes.bool,
   rounded: PropTypes.bool,
-  children: PropTypes.object
+  children: PropTypes.any
 };
