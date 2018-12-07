@@ -126,7 +126,7 @@ class App extends Component {
               bottom: 102
             }}
           >
-            <Icon size="small" />
+            <Icon type="question" size="small" />
           </button>
         )}
       </React.Fragment>
