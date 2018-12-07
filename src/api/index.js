@@ -1,10 +1,10 @@
-const alphaMode = true;
+const alphaMode = false;
 
 const BASE_URL = 'http://libras-o-jogo.herokuapp.com';
 
 const endPoints = { root: '/', game: '/game' };
 
-const getEndpoint = (endpoint) => {
+const getEndpoint = async (endpoint) => {
   const endPExists = Object.keys(endPoints).some((ep) => ep === endpoint);
 
   if (endPExists) {
@@ -12,7 +12,10 @@ const getEndpoint = (endpoint) => {
       return response;
     }
 
-    return 'não foi possivel criar o jogo' + BASE_URL;
+    const resp = await fetch(`${BASE_URL}${endPoints[endpoint]}`);
+    const data = await resp.json();
+
+    return data;
   }
 
   return 'Esse endpoint não existe';
