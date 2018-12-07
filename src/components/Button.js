@@ -40,8 +40,18 @@ export default class Button extends React.Component {
           if (onClick()) {
             this.setState({ sDisabled: true });
           } else {
-            this.setState({ sSuccess: true });
-            setTimeout(onWin, 500);
+            setTimeout(() => {
+              this.setState({ sSuccess: true });
+              setTimeout(() => {
+                this.setState({ sSuccess: false });
+                setTimeout(() => {
+                  this.setState({ sSuccess: true });
+                  setTimeout(() => {
+                    onWin();
+                  }, 250);
+                }, 250);
+              }, 250);
+            }, 250);
           }
         }}
       >
