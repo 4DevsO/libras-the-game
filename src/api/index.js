@@ -1,6 +1,6 @@
 const alphaMode = false;
 
-const BASE_URL = 'http://libras-o-jogo.herokuapp.com';
+const BASE_URL = 'https://libras-o-jogo.herokuapp.com';
 
 const endPoints = { root: '/', game: '/game' };
 
